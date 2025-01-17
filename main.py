@@ -11,22 +11,22 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Powerpuff Girls Survival")
 
 # Load background image
-BG = pygame.image.load(r"C:\Users\neuge\Documents\Personal Projects\Powerpuff Girls Survival\bg.png")
+BG = pygame.image.load("bg.png")
 BG = pygame.transform.scale(BG, (WIDTH, HEIGHT))
 
 # Load start music
-START_MUSIC = r"C:\Users\neuge\Documents\Personal Projects\Powerpuff Girls Survival\Powerpuff Girls BG Audio.MP3"
+START_MUSIC = "Powerpuff Girls BG Audio.MP3"
 
 # Load game music
-PLAY_MUSIC = r"C:\Users\neuge\Documents\Personal Projects\Powerpuff Girls Survival\Powerpuff Girls - Mojo Jojo.mp3"
+PLAY_MUSIC = "Powerpuff Girls - Mojo Jojo.mp3"
 
 # Load lose music
-LOSE_MUSIC = r"C:\Users\neuge\Documents\Personal Projects\Powerpuff Girls Survival\Powerpuff Girls - Wafoo.mp3"
+LOSE_MUSIC = "Powerpuff Girls - Wafoo.mp3"
 
 # Load character image
-CHARACTER1_IMAGE = pygame.image.load(r"C:\Users\neuge\Documents\Personal Projects\Powerpuff Girls Survival\Blossom.webp").convert_alpha()
-CHARACTER2_IMAGE = pygame.image.load(r"C:\Users\neuge\Documents\Personal Projects\Powerpuff Girls Survival\Bubbles.webp").convert_alpha()
-CHARACTER3_IMAGE = pygame.image.load(r"C:\Users\neuge\Documents\Personal Projects\Powerpuff Girls Survival\Buttercup.webp").convert_alpha()
+CHARACTER1_IMAGE = pygame.image.load("Blossom.webp")
+CHARACTER2_IMAGE = pygame.image.load("Bubbles.webp")
+CHARACTER3_IMAGE = pygame.image.load("Buttercup.webp")
 
 # High score file
 SCORE_FILE = "high_score.txt"
@@ -74,7 +74,7 @@ def draw(player, elapsed_time, fire2):
 
 # Character selection function
 def character_selection():
-    CS_BG = pygame.image.load(r"C:\Users\neuge\Documents\Personal Projects\Powerpuff Girls Survival\Character Selection BG.jpg")
+    CS_BG = pygame.image.load("Character Selection BG.jpg")
     CS_BG = pygame.transform.scale(CS_BG, (WIDTH, HEIGHT))
 
     play_music(START_MUSIC)
